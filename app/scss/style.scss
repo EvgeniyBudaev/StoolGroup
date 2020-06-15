@@ -1203,6 +1203,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     &-copyright {
       font-size: 14px;
