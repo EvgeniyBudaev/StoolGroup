@@ -1,0 +1,42 @@
+@media (max-width: 1749px) {
+  .projects__card img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1366px) {
+  .header__search-form {
+    left: 65%;
+  }
+}
+
+@media (max-width: 1289px) {
+  .sales-leaders__items {
+    justify-content: center;
+  }
+  .new-items__items {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__search-form {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__menu {
+    display: none;
+  }
+  .categories__inner {
+    height: 40px;
+  }
+  .categories__inner--left,
+  .categories__inner--right {
+    display: none;
+  }
+  footer__item {
+    padding: 15px 15px;
+  }
+}
