@@ -16,20 +16,6 @@ $(function () {
         dots: true,
       },
     },
-      {
-        breakpoint: 1441,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
     ],
   });
 
@@ -65,6 +51,7 @@ $(function () {
   // icon search
   $('#search').click(function () {
     $('.menu-item').addClass('hide-item')
+    $('.header__box--left').addClass('active')
     $(".header__search-form").addClass("active");
     $(".close").addClass("active");
     $("#search").hide();
@@ -72,6 +59,7 @@ $(function () {
   $(".close").click(function () {
     $(".menu-item").removeClass("hide-item");
     $(".header__search-form").removeClass("active");
+    $('.header__box--left').removeClass('active')
     $(".close").removeClass("active");
     $("#search").show();
   });
@@ -208,11 +196,16 @@ $(function () {
     $(".sidebar").toggleClass("active");
     $(".nav-menu").toggleClass("off");
     $(".header__top").toggleClass("off");
-    $(".aside-panel__controls").toggleClass("off");
-    $(".aside-panel__items").toggleClass("off");
-    $(".about__slider-wrapper").toggleClass("off");
+  });
+
+  // Sticky scroll header
+  window.addEventListener("scroll", function() {
+    const header = document.querySelector(".header__top-inner");
+    header.classList.toggle("sticky", window.scrollY > 0);
   });
 
   // Animation
   new WOW().init();
 });
+
+

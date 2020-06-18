@@ -2,11 +2,26 @@
   .projects__card img {
     max-width: 100%;
   }
+  .nav {
+    margin-top: 6%;
+  }
+}
+
+@media (max-width: 1385px) {
+  .header__box--left {
+    padding-right: 300px;
+  }
 }
 
 @media (max-width: 1366px) {
   .header__search-form {
     left: 65%;
+  }
+}
+
+@media (max-width: 1335px) {
+  .header__box--left {
+    padding-right: 250px;
   }
 }
 
@@ -19,13 +34,29 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1236px) {
+  .header__box--left {
+    padding-right: 150px;
+  }
+}
+
+
+@media (max-width: 1240px) {
   .header__search-form {
     width: 400px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1136px) {
+  .header__box--left {
+    padding-right: 50px;
+  }
+  .header__search-form {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1035px) {
   .header__menu {
     display: none;
   }
@@ -64,15 +95,12 @@
   }
 }
 
-@media (max-width: 800px) {
-  .header__search-form {
-    width: 300px;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 774px) {
   .menu-item.delivery {
     display: none;
+  }
+  .header__search-form {
+    width: 150px;
   }
   .collections__item-right {
     max-width: 100%;
@@ -93,8 +121,8 @@
   .header__phone {
     display: none;
   }
-  .header__search-form {
-    width: 150px;
+  .header__box--left {
+    padding-right: 210px;
   }
 }
 
@@ -113,6 +141,9 @@
     left: 55%;
     width: 100px;
   }
+  .header__box--left {
+    padding-right: 160px;
+  }
   .header__btn-menu.icon-user {
     display: none;
   }
@@ -124,10 +155,13 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .header__search-form {
     left: 60%;
     width: 90px;
+  }
+  .header__btn-menu {
+    margin-left: 25px;
   }
 }
 
@@ -137,6 +171,12 @@
   }
   .header__search-form {
     left: 55%;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__box--left {
+    padding-right: 130px;
   }
 }
 
@@ -159,9 +199,15 @@
   }
 }
 
-@media (max-width: 340px) {
-  .header__search-form {
-    left: 47%;
+@media (max-width: 365px) {
+  .header__box--left {
+    padding-right: 40px;
+  }
+  .header__box--left.active {
+    padding-right: 93px;
   }
 }
+
+
+
 
