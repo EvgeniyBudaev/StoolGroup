@@ -4,16 +4,11 @@
 
 // start header
 .header {
-  background-color:$white;
-  width: 100%;
+  background-color: #fff;
+  overflow-x: hidden;
 
   &__top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    display: flex;
-    z-index: 2;
+    position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
     background-color: $header-top-bg;
@@ -28,22 +23,12 @@
     justify-content: space-between;
     height: 90px;
     align-items: center;
-    transition: 0.6s;
   }
-
-  &__top-inner.sticky {
-    height: 45px;
-  }
-
 
   &__box--left,
   &__box--right {
     display: flex;
     align-items: center;
-  }
-
-  &__box--left {
-    padding-right: 400px;
   }
 
   &__logo {
@@ -211,7 +196,6 @@
 // start categories
 .categories {
   position: relative;
-  padding-top: 100px;
 
   &__inner {
     display: flex;
@@ -243,8 +227,7 @@
 
     &--left ul li a:hover,
     &--right ul li a:hover {
-      font-family: "Gilroy-Semibold", sans-serif;
-      font-weight: 600;
+      opacity: 0.7;
     }
 
     & ul li a {
@@ -254,7 +237,7 @@
     &-submenu.categories__submenu {
       background-color: $peach;
       position: absolute;
-      top: 180px;
+      top: 80px;
       left: 0;
       width: 100%;
       overflow: hidden;
@@ -289,8 +272,7 @@
     }
 
     &-submenu .categories__submenu-item:hover {
-      font-family: "Gilroy-Semibold", sans-serif;
-      font-weight: 600;
+      opacity: 0.7;
     }
   }
 }
@@ -302,6 +284,7 @@
 // end categories
 // start slider
 .slider {
+  overflow-x: hidden;
   &__item {
     max-width: 1760px;
     width: 100%;
@@ -423,6 +406,7 @@
 // start sales-leaders
 .sales-leaders {
   padding: 100px 0;
+  overflow-x: hidden;
 
   &__title {
     margin-bottom: 20px;
@@ -649,6 +633,7 @@
 // start collections
 .collections {
   padding-bottom: 150px;
+  overflow-x: hidden;
 
   &__mainTitle {
     margin-bottom: 20px;
@@ -845,6 +830,7 @@
 // start new-items
 .new-items {
   padding: 100px 0;
+  overflow-x: hidden;
 
   &__title {
     margin-bottom: 20px;
@@ -1071,6 +1057,7 @@
 // start projects
 .projects {
   padding: 100px 0;
+  overflow-x: hidden;
 
   &__title {
     margin-bottom: 20px;
@@ -1172,6 +1159,7 @@
 //end projects
 // start footer
 .footer {
+  overflow-x: hidden;
   &__inner {
     background-color: $gray;
     padding: 100px 180px 0;
@@ -1236,10 +1224,8 @@
       cursor: pointer;
     }
 
+    &-pivacyPolicy:hover,
     &-termsOfUse:hover {
-      color: $text;
-    }
-    &-pivacyPolicy:hover {
       color: $text;
     }
   }
@@ -1338,7 +1324,7 @@
 .hamburger {
   position: relative;
   right: 50%;
-  top: 0;
+  top: 0%;
   z-index: 2;
   width: 18px;
   height: 18px;
@@ -1346,9 +1332,6 @@
   float: right;
   transition: all 0.3s ease-out;
   transform: translateX(50%);
-  &.on {
-    top: 10px;
-  }
 }
 
 .hamburger .hamburger__span {
@@ -1375,7 +1358,7 @@
 
 // start sidebar
 .menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   height: 100vh;
